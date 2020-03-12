@@ -2,7 +2,7 @@
     <div class="main-app-sidebar">
         <div class="list-header">
             <router-link :title="versionString" class="header server-header" to="/">
-                Script server
+                [mw]dev
             </router-link>
 
             <SearchPanel v-model="searchText"/>
@@ -11,8 +11,8 @@
                 <a class="teal-text" href="admin.html" v-if="adminUser">
                     <i class="material-icons">settings</i>
                 </a>
-                <a href="https://github.com/bugy/script-server" target="_blank" v-else>
-                    <img src="../../images/github.png">
+                <a href="http://mward.io" target="_blank" v-else>
+                    <img src="http://mward.io/mwmulti.png">
                 </a>
             </div>
         </div>
