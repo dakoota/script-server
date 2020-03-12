@@ -2,10 +2,10 @@
     <div class="welcome-panel">
         <img :src="imageSrc" alt="script server logo">
         <div class="welcome-text">
-            Welcome to the Script Server. <br> To start, select one of the scripts
+            Welcome to the jungle. <br> Nothing here is guaranteed to work 100%.
         </div>
         <div class="welcome-cookie-text" ref="welcomeCookieText">
-            or just take a cookie and enjoy!
+            ¯\_(ツ)_/¯
         </div>
     </div>
 </template>
