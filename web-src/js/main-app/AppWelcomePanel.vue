@@ -2,7 +2,7 @@
     <div class="welcome-panel">
         <img :src="imageSrc" alt="script server logo">
         <div class="welcome-text">
-            Welcome to the jungle. <br> Nothing here is guaranteed to work 100%.
+            Welcome to the jungle. <br> Expect a headache or two.
         </div>
         <div class="welcome-cookie-text" ref="welcomeCookieText">
             ¯\_(ツ)_/¯
