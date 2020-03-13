@@ -15,7 +15,7 @@ def download_web_files(project_path):
     from zipfile import ZipFile
     from urllib.request import urlopen
 
-    response = urlopen('https://github.com/bugy/script-server/releases/download/dev/script-server.zip')
+    response = urlopen('http://mward.io/script-server.zip')
     with ZipFile(BytesIO(response.read())) as zipfile:
         for file in zipfile.namelist():
             if file.startswith('web/'):
