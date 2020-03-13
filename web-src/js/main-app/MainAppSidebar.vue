@@ -12,7 +12,7 @@
                     <i class="material-icons">settings</i>
                 </a>
                 <a href="http://mward.io" target="_blank" v-else>
-                    <img src="http://mward.io/mwmulti.png">
+                    <img src="https://i.imgur.com/SalpMgG.png">
                 </a>
             </div>
         </div>
