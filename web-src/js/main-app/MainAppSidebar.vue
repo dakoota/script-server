@@ -11,8 +11,9 @@
                 <a class="teal-text" href="admin.html" v-if="adminUser">
                     <i class="material-icons">settings</i>
                 </a>
-                <a href="http://mward.io" target="_blank" v-else>
-                    <img src="https://i.imgur.com/SalpMgG.png">
+                <a href="https://github.com" target="_blank" v-else>
+                    <img src="http://mward.io/tritri.png" width="25">
+                    <!-- <img src="../../images/github.png"> -->
                 </a>
             </div>
         </div>
