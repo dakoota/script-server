@@ -1,0 +1,16 @@
+{
+  "name": "IG Post Scraper (by Tag)",
+  "script_path": "python scripts/ig_posts_by_tag.py",
+  "description": "Enter the hashtag below (without #) and click 'Execute'. Do not leave this page or the script will stop.",
+  "parameters": [
+    {
+      "name": "Instagram Hashtag",
+      "required": true,
+      "param": "--hashtag",
+      "description": "Instagram Hashtag"
+    }
+  ],
+  "output_files": [
+      "outputs/${Instagram Hashtag}-posts.csv"
+  ]
+}

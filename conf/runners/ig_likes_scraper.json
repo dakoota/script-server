@@ -1,0 +1,16 @@
+{
+  "name": "IG Likes Scraper",
+  "script_path": "scripts/ig_get_likes.py",
+  "description": "Paste the Instagram post code below (not the full URL) and click 'Execute'. Do not leave this page or the script will stop.\nPost code can be found in the post URL (instagram.com/p/POST_CODE/).",
+  "parameters": [
+    {
+      "name": "Instagram Post Code",
+      "required": true,
+      "param": "--postcode",
+      "description": "Instagram Post Code"
+    }
+  ],
+  "output_files": [
+      "outputs/${Instagram Post Code}-likes.csv"
+  ]
+}

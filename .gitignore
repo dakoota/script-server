@@ -62,8 +62,8 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-conf/runners
-conf/conf.json
+#conf/runners
+#conf/conf.json
 logs
 .idea
 temp
