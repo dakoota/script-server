@@ -1,2 +1,5 @@
 typing
 tornado>=4
+requests
+requests[socks]
+python-slugify
