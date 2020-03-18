@@ -200,7 +200,7 @@ input[type=checkbox]:not(.browser-default) + span {
 }
 
 .main-content-header {
-    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/prism.png') repeat center;
-    /* ../images/titleBackground.jpg */
+    background: url('../images/titlebg.png') no-repeat center;
+    /* https://www.toptal.com/designers/subtlepatterns/patterns/prism.png */
     background-size: cover;
 }
