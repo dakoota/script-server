@@ -1,6 +1,12 @@
 typing
 tornado>=4
+<<<<<<< HEAD
 igramscraper
 requests==2.21.0
 python-slugify==3.0.2
 requests[socks]
+=======
+requests
+requests[socks]
+python-slugify
+>>>>>>> 1bd37bec417283823823ac929aa3b317de012cc3
