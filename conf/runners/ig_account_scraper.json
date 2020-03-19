@@ -1,0 +1,24 @@
+{
+  "name": "IG Account Scraper",
+  "script_path": "python scripts/ig_posts_by_account.py",
+  "description": "Enter the username and maximum number of posts to scrape (optional) below and click 'Execute'. Do not leave this page or the script will stop.",
+  "parameters": [
+    {
+      "name": "Instagram Username",
+      "required": true,
+      "param": "--username",
+      "description": "Instagram Username"
+    },
+    {
+      "name": "Maximum Posts",
+      "required": true,
+      "type": "int",
+      "default": "10000",
+      "param": "--max",
+      "description": "Maximum Posts"
+    }
+  ],
+  "output_files": [
+      "outputs/${Instagram Username}-posts.csv"
+  ]
+}
