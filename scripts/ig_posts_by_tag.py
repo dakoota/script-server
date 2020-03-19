@@ -6,7 +6,6 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--hashtag", required=True, type=str, help="Instagram hashtag without '#' symbol")
-
 args = parser.parse_args()
 
 hashtag = args.hashtag
@@ -20,20 +19,9 @@ proxies = {
 
 instagram = Instagram()
 instagram.set_proxies(proxies)
-
 medias = instagram.get_medias_by_tag(hashtag, count=maxPosts)
-estSec = len(medias) / 32
 
-print ('\nFound %s public posts...' % lenmed)
-if estSec >= 60:
-	estSec = estSec / 60
-	print ('Should take ~%.0fm to scrape.' % estSec)
-elif estSec >=3600:
-	estSec = estSec / 3600
-	print ('Should take ~%.0fh to scrape.' % estSec)
-else:
-	print ('Should take ~%.0fs to scrape.' % estSec)
-print("Do not close this window.\n")
+print ("\n Scraping in progress... Do not close this window.\n")
 
 with open(csvPath, 'a', encoding='utf-8') as f:
 	writer = csv.writer(f, lineterminator = '\n')
