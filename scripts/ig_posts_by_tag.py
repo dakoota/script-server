@@ -11,7 +11,7 @@ args = parser.parse_args()
 
 hashtag = args.hashtag
 csvPath = os.path.join('outputs/', '%s-posts.csv' % hashtag)
-maxPosts = 10000
+maxPosts = 20000
 
 proxies = {
 	"http": "socks5h://x2923101:g2XbTQ6tHk@proxy-nl.privateinternetaccess.com:1080",
@@ -36,7 +36,9 @@ for media in medias:
 
 f.close()
 
-print ('\nDone! There should be a link to download a CSV file\nwith your data at the bottom of this page...\n')
-print ('\n*FYI*\n')
-print ('The post dates will be in Unix timestamps...\nUse the formula below to convert to regular date format.\n')
-print ('=(B2/86400)+DATE(1970,1,1)')
+print ('\nDone! Successfully scraped %s posts.\n' % len(medias))
+print ('A link to download the CSV data file should be below.\n)
+print ('*FYI*')
+print ('The post dates will be in Unix timestamps...')
+print ('Use the formula below to convert to regular date format.\n')
+print ('    =(B2/86400)+DATE(1970,1,1)')

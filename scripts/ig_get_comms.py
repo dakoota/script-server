@@ -42,4 +42,5 @@ for comment in comments['comments']:
 
 f.close()
 
-print ('\nDone! There should be a link to download a CSV file\nwith your data at the bottom of this page...\n')
+print ('\nDone! Successfully scraped %s comments.\n' % len(comments['comments']))
+print ('A link to download the CSV data file should be below.\n')

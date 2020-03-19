@@ -1,2 +1,6 @@
 typing
 tornado>=4
+igramscraper
+requests==2.21.0
+python-slugify==3.0.2
+requests[socks]
