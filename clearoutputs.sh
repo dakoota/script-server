@@ -1,2 +1,2 @@
 #!/bin/bash
-find ~/script-server/outputs/ -type f -exec rm {} \;
+find ~/script-server/outputs/ -type f -not -name '.gitkeep' -exec rm {} \;

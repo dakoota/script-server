@@ -1,15 +1,17 @@
+#!env/bin/python3
+
 from context import Instagram
 import argparse, csv, time, os, sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--username", required=True, type=str, help="Instagram username to scrape")
+parser.add_argument("--uname", required=True, type=str, help="Instagram username to scrape")
 parser.add_argument("--max", required=True, type=int, default=10000, help="Maximum number of posts to scrape")
 
 args = parser.parse_args()
-acct = args.username
+account = args.uname
 maxPosts = args.max
 
-csvPath = os.path.join('../outputs/%s-posts.csv' % acct)
+csvPath = os.path.join('outputs/%s-posts.csv' % account)
 
 proxies = {
 	"http": "socks5h://x2923101:g2XbTQ6tHk@proxy-nl.privateinternetaccess.com:1080",
@@ -21,7 +23,7 @@ instagram.set_proxies(proxies)
 
 print("\nScraping in progress... please wait...")
 
-medias = instagram.get_medias(acct, maxPosts)
+medias = instagram.get_medias(account, maxPosts)
 
 with open(csvPath, 'a', encoding='utf-8') as f:
 	writer = csv.writer(f, lineterminator = '\n')

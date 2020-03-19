@@ -6,7 +6,8 @@
     {
       "name": "Instagram Username",
       "required": true,
-      "param": "--username",
+      "type": "str",
+      "param": "--uname",
       "description": "Instagram Username"
     },
     {
