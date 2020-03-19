@@ -21,9 +21,19 @@ proxies = {
 instagram = Instagram()
 instagram.set_proxies(proxies)
 
-print("\nScraping in progress... do not close this window.\n")
-
 medias = instagram.get_medias_by_tag(hashtag, count=maxPosts)
+estSec = len(medias) / 32
+
+print ('\nFound %s public posts...' % lenmed)
+if estSec >= 60:
+	estSec = estSec / 60
+	print ('Should take ~%.0fm to scrape.' % estSec)
+elif estSec >=3600:
+	estSec = estSec / 3600
+	print ('Should take ~%.0fh to scrape.' % estSec)
+else:
+	print ('Should take ~%.0fs to scrape.' % estSec)
+print("Do not close this window.\n")
 
 with open(csvPath, 'a', encoding='utf-8') as f:
 	writer = csv.writer(f, lineterminator = '\n')
@@ -36,9 +46,9 @@ for media in medias:
 
 f.close()
 
-print ('\nDone! Successfully scraped %s posts.\n' % len(medias))
-print ('A link to download the CSV data file should be below.\n)
-print ('*FYI*')
+print ('\nDone! Successfully scraped %s posts.' % len(medias))
+print ('A link to download the CSV data file should be below.\n')
+print ('**FYI**')
 print ('The post dates will be in Unix timestamps...')
 print ('Use the formula below to convert to regular date format.\n')
 print ('    =(B2/86400)+DATE(1970,1,1)')
