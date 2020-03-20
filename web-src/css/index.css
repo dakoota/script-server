@@ -205,9 +205,5 @@ input[type=checkbox]:not(.browser-default) + span {
 
 .main-content-header {
     background: url('../images/titlebg.png') no-repeat center;
-<<<<<<< HEAD
-=======
-    /* https://www.toptal.com/designers/subtlepatterns/patterns/prism.png */
->>>>>>> 1bd37bec417283823823ac929aa3b317de012cc3
     background-size: cover;
 }

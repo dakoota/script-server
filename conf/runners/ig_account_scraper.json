@@ -1,7 +1,7 @@
 {
   "name": "IG Account Scraper",
   "script_path": "python scripts/ig_posts_by_account.py",
-  "description": "Enter the username and maximum number of posts to scrape (optional) below and click 'Execute'. Do not leave this page or the script will stop.",
+  "description": "\nEnter the username and maximum number of posts to scrape (optional) below and click 'Execute'.",
   "parameters": [
     {
       "name": "Instagram Username",
