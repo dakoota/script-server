@@ -16,10 +16,6 @@
 
         <ScriptsList :search-text="searchText"/>
 
-        <router-link class="waves-effect waves-teal btn-flat bottom-panel teal-text history-button" to='/history'>
-            History
-        </router-link>
-
         <div class="logout-panel bottom-panel" v-if="authEnabled">
             <span>{{username}}</span>
             <input :src="logoutIcon" @click="logout" class="logout-button" type="image">
