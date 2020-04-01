@@ -1,0 +1,17 @@
+{
+  "name": "TW Follower Scraper",
+  "script_path": "python scripts/tw_follower_scraper.py",
+  "description": "\nEnter the Twitter username below and click 'Execute'. The script will then estimate how long it will take and ask if you want to continue.",
+  "parameters": [
+    {
+      "name": "Twitter Username",
+      "required": true,
+      "type": "str",
+      "param": "--uname",
+      "description": "Twitter Username"
+    }
+  ],
+  "output_files": [
+      "outputs/${Twitter Username}-FollowerData.csv"
+  ]
+}
