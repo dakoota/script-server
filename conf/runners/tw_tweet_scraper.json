@@ -1,0 +1,18 @@
+{
+  "name": "TW Tweet Scraper",
+  "script_path": "python scripts/tw_tweet_scraper.py",
+  "description": "\nEnter the Twitter username below and click 'Execute'. A maximum of 3,200 tweets will be scraped.",
+  "parameters": [
+    {
+      "name": "Twitter Username",
+      "required": true,
+      "type": "str",
+      "param": "--uname",
+      "description": "Twitter Username"
+    }
+  ],
+  "output_files": [
+      "outputs/${Twitter Username}-tweets.csv"
+  ]
+}
+
