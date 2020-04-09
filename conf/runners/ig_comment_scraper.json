@@ -1,7 +1,7 @@
 {
   "name": "IG Comment Scraper",
   "script_path": "python scripts/ig_get_comms.py",
-  "description": "\nPaste the Instagram post code below (not the full URL) and click 'Execute' (post code can be found at the end of the post URL).\n",
+  "description": "\nPaste the Instagram post code below and click 'Execute' (post code can be found at the end of the post URL).\n Note: will not scrape nested replies.\n",
   "parameters": [
     {
       "name": "Instagram Post Code",

@@ -6,11 +6,13 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--hashtag", required=True, type=str, help="Instagram hashtag without '#' symbol")
-args = parser.parse_args()
+parser.add_argument("--max", required=True, type=int, default=10000, help="Maximum number of posts to scrape")
 
+args = parser.parse_args()
 hashtag = args.hashtag
+maxPosts = args.max
+
 csvPath = os.path.join('outputs/', '%s-posts.csv' % hashtag)
-maxPosts = 20000
 
 proxies = {
 	"http": "socks5h://x2923101:g2XbTQ6tHk@proxy-nl.privateinternetaccess.com:1080",

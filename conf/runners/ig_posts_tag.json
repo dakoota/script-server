@@ -8,6 +8,14 @@
       "required": true,
       "param": "--hashtag",
       "description": "Instagram Hashtag"
+    },
+    {
+      "name": "Maximum Posts",
+      "required": true,
+      "type": "int",
+      "default": "10000",
+      "param": "--max",
+      "description": "Maximum Posts"
     }
   ],
   "output_files": [
