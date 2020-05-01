@@ -21,9 +21,10 @@ proxies = {
 
 instagram = Instagram()
 instagram.set_proxies(proxies)
-medias = instagram.get_medias_by_tag(hashtag, count=maxPosts)
 
-print ("\n Scraping in progress... Do not close this window.\n")
+print ("\n Scraping in progress... please wait.\n")
+
+medias = instagram.get_medias_by_tag(hashtag, count=maxPosts)
 
 with open(csvPath, 'a', encoding='utf-8') as f:
 	writer = csv.writer(f, lineterminator = '\n')

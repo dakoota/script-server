@@ -8,7 +8,7 @@ acct = args.uname
 acct = acct.replace('@','')
 
 auth = tweepy.OAuthHandler('svwoALxCmje0MXh3hx5UnUiaf', 'yTRtMZMvkQzyHfcWJZz1Y7YYFUGzTiX1ZlmVRFCDDhelOX5apE')
-api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, retry_count=10, retry_delay=5, retry_errors=set([503]))
 
 if (not api):
   print ('Can\'t Authenticate')
