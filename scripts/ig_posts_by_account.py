@@ -13,13 +13,13 @@ maxPosts = args.max
 
 csvPath = os.path.join('outputs/%s-posts.csv' % account)
 
-proxies = {
-	"http": "socks5h://x2923101:g2XbTQ6tHk@proxy-nl.privateinternetaccess.com:1080",
- 	"https": "socks5h://x2923101:g2XbTQ6tHk@proxy-nl.privateinternetaccess.com:1080",
-}
+#proxies = {
+#	"http": "socks5h://x2923101:g2XbTQ6tHk@proxy-nl.privateinternetaccess.com:1080",
+#	"https": "socks5h://x2923101:g2XbTQ6tHk@proxy-nl.privateinternetaccess.com:1080",
+#}
 
 instagram = Instagram()
-instagram.set_proxies(proxies)
+#instagram.set_proxies(proxies)
 
 print("\nScraping in progress... please wait...")
 

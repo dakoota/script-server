@@ -1,4 +1,5 @@
 {
+  "hidden": true,
   "name": "IG Account Scraper",
   "script_path": "python scripts/ig_posts_by_account.py",
   "description": "\nEnter the username (without @) and maximum number of posts to scrape (default is 10,000) and click 'Execute'.",
