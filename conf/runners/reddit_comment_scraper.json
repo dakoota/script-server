@@ -1,0 +1,17 @@
+{
+  "name": "Reddit Comment Scraper",
+  "script_path": "python scripts/reddit_comment_scraper.py",
+  "description": "\nEnter the ID of the Reddit post to scrape and click 'Execute'. The post ID is a six character string towards the middle of the post URL.",
+  "parameters": [
+    {
+      "name": "Post ID",
+      "required": true,
+      "type": "str",
+      "param": "--postid",
+      "description": "Reddit Post ID"
+    }
+  ],
+  "output_files": [
+      "outputs/${Post ID}_comments.csv"
+  ]
+}
