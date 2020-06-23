@@ -1,0 +1,25 @@
+{
+  "name": "Reddit Post Scraper",
+  "script_path": "python scripts/reddit_post_scraper.py",
+  "description": "\nEnter the subreddit and maximum number of posts to scrape (default is 997) and click 'Execute'.",
+  "parameters": [
+    {
+      "name": "Subreddit",
+      "required": true,
+      "type": "str",
+      "param": "--subreddit",
+      "description": "Reddit Subreddit"
+    },
+    {
+      "name": "Maximum Posts",
+      "required": true,
+      "type": "int",
+      "default": "997",
+      "param": "--limit",
+      "description": "Maximum Posts"
+    }
+  ],
+  "output_files": [
+      "outputs/new_${Subreddit}_posts.csv"
+  ]
+}
