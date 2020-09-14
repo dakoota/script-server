@@ -20,7 +20,7 @@ proxies = {
 }
 
 instagram = Instagram()
-instagram.set_proxies(proxies)
+#instagram.set_proxies(proxies)
 
 print ("\n Scraping in progress... please wait.\n")
 
