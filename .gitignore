@@ -1,5 +1,5 @@
 # Project Specifics
-#outputs/*.csv
+outputs/*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
